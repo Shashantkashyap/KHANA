@@ -4,7 +4,7 @@ require("dotenv").config();
 const cors = require("cors")
 const mongoDB = require("./DB/database");
 
-const PORT = 5000;
+const PORT = process.env.PORT || 6000;
 
 mongoDB.mongoDB();
 
