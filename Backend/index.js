@@ -10,6 +10,7 @@ mongoDB.mongoDB();
 
 app.use(cors({
     origin: process.env.FRONT_URL,
+    methods: ["POST" , "GET"]
     credentials: true,  // Enable credentials (cookies, authorization headers)
   }));
 
